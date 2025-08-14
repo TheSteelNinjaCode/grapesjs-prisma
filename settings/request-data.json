@@ -1,0 +1,29 @@
+{
+    "build": {
+        "url": "build",
+        "fileName": "build",
+        "isCacheable": true,
+        "cacheTtl": 0,
+        "includedFiles": [
+            "C:\\xampp\\htdocs\\projects\\prisma-php\\posts\\grapesjs-prisma\\src\\app\\build\\index.php"
+        ]
+    },
+    "\/": {
+        "url": "\/",
+        "fileName": "index",
+        "isCacheable": true,
+        "cacheTtl": 0,
+        "includedFiles": [
+            "C:\\xampp\\htdocs\\projects\\prisma-php\\posts\\grapesjs-prisma\\src\\app\\index.php"
+        ]
+    },
+    "blog": {
+        "url": "blog",
+        "fileName": "blog",
+        "isCacheable": true,
+        "cacheTtl": 0,
+        "includedFiles": [
+            "C:\\xampp\\htdocs\\projects\\prisma-php\\posts\\grapesjs-prisma\\src\\app\\blog\\index.php"
+        ]
+    }
+}

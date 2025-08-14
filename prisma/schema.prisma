@@ -1,0 +1,47 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model StudioProject {
+  id          String   @id @default(cuid())
+  name        String?
+  projectKey  String   @unique
+  projectType String?
+  data        Json
+  html        String?
+  css         String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  pages StudioPage[]
+}
+
+model StudioPage {
+  id        String   @id @default(cuid())
+  projectId String
+  pageId    String
+  name      String
+  slug      String
+  html      String
+  css       String?
+  isHome    Boolean  @default(false)
+  sort      Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  project StudioProject @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, pageId])
+  @@unique([projectId, slug])
+}

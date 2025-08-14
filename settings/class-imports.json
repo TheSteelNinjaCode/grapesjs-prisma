@@ -1,0 +1,9 @@
+{
+  "PHPX": [
+    {
+      "className": "Lib\\PHPX\\PHPX",
+      "filePath": "Lib\\PHPX\\PHPX.php",
+      "importer": "C:\\xampp\\htdocs\\projects\\prisma-php\\posts\\grapesjs-prisma\\src\\Lib\\PHPX\\Fragment.php"
+    }
+  ]
+}

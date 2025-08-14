@@ -1,0 +1,19 @@
+{
+  "projectName": "grapesjs-prisma",
+  "projectRootPath": "C:\\xampp\\htdocs\\projects\\prisma-php\\posts\\grapesjs-prisma",
+  "phpEnvironment": "XAMPP",
+  "phpRootPathExe": "C:\\xampp\\php\\php.exe",
+  "bsTarget": "http://localhost/projects/prisma-php/posts/grapesjs-prisma/",
+  "bsPathRewrite": {
+    "^/": "/projects/prisma-php/posts/grapesjs-prisma/"
+  },
+  "backendOnly": false,
+  "swaggerDocs": false,
+  "tailwindcss": false,
+  "websocket": false,
+  "mcp": false,
+  "prisma": true,
+  "docker": false,
+  "version": "3.6.2",
+  "excludeFiles": []
+}
